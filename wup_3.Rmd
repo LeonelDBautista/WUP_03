@@ -37,6 +37,24 @@ mutate(across(where(is.character), as.factor))
 
 Looking at the data using glimpse() we can see that Alcohol is a continuous numerical and seat is a regular categorical. This problem is a numerical categorical comparison so we will use the Num~Cat helper file in CandP. We will also use the my tricks to factor the categorical data using dyplr. We will show our graphical results using ggplot2, numerical with favstats, and run inferential tests with an anova because we have more than two categories and then a TukeyHSD to find where the differences are in our data.   
 
+# Results      
+
+## Descriptive Results   
+
+### Graphical Descriptive Results   
+
+``` {r include = TRUE, echo = FALSE}
+ggplot(data = davisdata, aes(x = Seat, y = alcohol) ) +
+geom_boxplot (notch=FALSE,outlier.colour = "red",outlier.size = 2, fill = "darkgray") +
+stat_boxplot (geom ='errorbar') +
+labs (x = "Seat", y = "Alcohol Consumed", title = "Alcohol vs Seat Choice") +
+theme (plot.title = element_text(hjust = 0.5, size = 16) )
+```
+
+In this analysis, it is evident that the back seats exhibit a notable discrepancy in alcohol consumption compared to the front and middle seats. The median alcohol consumption in the back seats nearly aligns with the upper quartile (Q4) measure in the front seats. Furthermore, the interquartile range (IQR) of the back seats surpasses the median of both the front and middle seats.   
+
+Additionally, the middle seats show a slight elevation in alcohol consumption compared to the front seats, as evidenced by a higher median and a greater number of outliers. With a more comprehensive assessment, it is likely that the front and middle seats would demonstrate a closer similarity in alcohol consumption patterns.   
+
 ## Numerical Summarys 
 
 ## Inferential Tests
