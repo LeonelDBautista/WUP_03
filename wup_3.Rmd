@@ -82,4 +82,5 @@ We see here in the TukeyHSD the only similar categories are the Middle and Front
 
 ## Conclusions
 
+From various metrics, it is evident that individuals seated in the back consume a significantly higher amount of alcohol compared to those in other categories. Both graphical, numerical, and inferential analyses consistently demonstrate a substantial divergence in the data across these categories. With a confidence level of 99%, we assert that there exists a robust correlation between back seat occupants and the remaining categories. It is imperative to scrutinize the data collection methodology to confirm that it does not rely on a convenience sample and to ensure the absence of collection biases, such as non-response bias.   
 
