@@ -19,9 +19,24 @@ davisdata <- read.csv(file="UCDavis.csv")
 
 ## Now with ggplot - first select the basic data
 
+# Introduction
+
+We will be looking into the DavisData data set that is included with tidyverse to see if there is and correlation between alcohol consumption and the chosen seat.     
+
+$H_0$ There is no difference in the data between alcohol and seat.     
+
+$H_A$ There is difference in the data between alcohol and seat.    
+
+```{r}
+glimpse(davisdata)
+davisdata <- davisdata %>%
+mutate(across(where(is.character), as.factor))
+```
+
 ```{r}
 basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ```
+
 ## Now add in boxplot
 
 ```{r}
