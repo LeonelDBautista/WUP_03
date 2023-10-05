@@ -72,7 +72,7 @@ model1 <- aov(alcohol~Seat,data=davisdata)
 summary.aov(model1)
 ```
 
-We see here that there is a significant difference somewhere in the data, p = 0.000116 (<0.05).   
+We see here that there is a significant difference somewhere in the data, p = 0.000116 (<0.05).     
 
 ```{r}
 plot(TukeyHSD(model1,conf.level = 0.99))
