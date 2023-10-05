@@ -61,7 +61,7 @@ Additionally, the middle seats show a slight elevation in alcohol consumption co
 favstats(alcohol~Seat,data=davisdata)
 ```
 
-The median and mean values for the back seats category exhibit a significant elevation, surpassing what could be attributed to random fluctuations. Moreover, given the sample size (n > 30), we would anticipate relatively smaller variations compared to what is actually observed.   
+The median and mean values for the back seats category exhibit a significant elevation, surpassing what could be attributed to random fluctuations. Moreover, given the sample size (n > 30), we would anticipate relatively smaller variations compared to what is actually observed.      
 
 Additionally, the $\sigma$ in the back seats category is notably greater, exceeding twice the magnitude seen in the other two categories.     
 
