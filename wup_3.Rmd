@@ -78,7 +78,7 @@ We see here that there is a significant difference somewhere in the data, p = 0.
 plot(TukeyHSD(model1,conf.level = 0.99))
 ```
 
-We see here in the TukeyHSD the only similar categories are the Middle and Front. The back differs strongly with front and the middle and we can say with a 99% confidence that there is a correlation between Alcohol and Seat.   
+We see here in the TukeyHSD the only similar categories are the Middle and Front. The back differs strongly with front and the middle and we can say with a 99% confidence that there is a correlation between Alcohol and Seat.     
 
 ## Conclusions
 
